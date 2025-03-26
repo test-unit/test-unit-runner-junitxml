@@ -11,6 +11,9 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{A test-unit runner that reports test result in JUnit XML format.}
   spec.homepage      = "https://github.com/test-unit/test-unit-runner-junitxml"
   spec.license       = "MIT"
+  spec.metadata      = {
+    "homepage_uri" => "https://github.com/test-unit/test-unit-runner-junitxml",
+  }
 
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
